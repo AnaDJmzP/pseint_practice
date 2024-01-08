@@ -1,0 +1,161 @@
+Algoritmo diaspara
+	
+	Definir ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic como Entero
+	Definir enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre Como Entero
+	Definir faltan, faltan1 como Entero
+	Definir aux, aux2 como Entero
+	Definir mes Como Entero
+	
+	ene<-31
+	feb<-28
+	mar<-31
+	abr<-30
+	may<-31
+	jun<-30
+	jul<-31
+	ago<-31
+	sep<-30
+	oct<-31
+	nov<-30
+	dic<-31
+	
+	enero<-1
+	febrero<-2
+	marzo<-3
+	abril<-4
+	mayo<-5
+	junio<-6
+	julio<-7
+	agosto<-8
+	septiembre<-9
+	octubre<-10
+	noviembre<-11
+	diciembre<-12
+	
+	Escribir "Escribe la fecha con nùmeros."
+	Escribir "Escribe el número del día. Ingresa un valor entre 1 y 31."
+	Leer numdia
+	Escribir "Escribe las primeras 3 letras del mes en minúsculas"
+	Leer mes
+	
+	
+	Si mes = ene Entonces
+		aux = numdia - ene + feb + mar + abr + may + jun + jul + ago + sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - ene + feb + mar + abr + may + jun + jul + ago + sep + oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan1,' días para navidad"
+	Fin Si
+	
+	Si mes = feb Entonces
+		aux = numdia - feb + mar + abr + may + jun + jul + ago + sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - feb + mar + abr + may + jun + jul + ago + sep + oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan1,' días para navidad"
+	Fin Si
+	
+	Si mes = mar Entonces
+		aux = numdia - mar + abr + may + jun + jul + ago + sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - mar + abr + may + jun + jul + ago + sep + oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan1,' días para navidad"
+	Fin Si
+	
+	Si mes = abr Entonces
+		aux = numdia - abr + may + jun + jul + ago + sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - abr + may + jun + jul + ago + sep + oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	Si mes = may Entonces
+		aux = numdia - may + jun + jul + ago + sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - may + jun + jul + ago + sep + oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	Si mes = jun Entonces
+		aux = numdia - jun + jul + ago + sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - jun + jul + ago + sep + oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	Si mes = jul Entonces
+		aux = numdia - jul + ago + sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - jul + ago + sep + oct + nov + (dic - 6 )
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	Si mes = ago Entonces
+		aux = numdia - ago + sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - ago + sep + oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	
+	Si sep = sep Entonces
+		aux = numdia - sep + oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - sep + oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	Si mes = oct Entonces
+		aux = numdia - oct + (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+		aux2 = numdia - oct + nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	Si mes = nov y numdia < 2 Entonces
+		aux = numdia -  (nov - 28)
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+	Sino 
+		aux = numdia - nov + dic + ene + feb + mar + abr + may + jun + jul + ago + sep + oct
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+	Fin Si
+	
+	Si mes = nov Entonces
+		aux2 = numdia - nov + (dic - 6)
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	Si mes = dic Entonces
+		aux = numdia - nov + dic + ene + feb + mar + abr + may + jun + jul + ago + sep + oct
+		faltan = aux
+		Escribir "faltan ',faltan,' días para día de muertos"
+	Fin Si
+	
+	Si mes = dic y numdia < 25 Entonces
+		aux2 = numdia - dic
+		faltan1 = aux2
+		Escribir "faltan ',faltan,' días para navidad"
+	Fin Si
+	
+	Fin Algoritmo 
