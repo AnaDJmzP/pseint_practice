@@ -1,0 +1,8 @@
+Algoritmo esfera
+	Escribir "¿Cuál es el radio?"
+	Leer radio
+	r=radio*radio*radio
+	ra=(r*4)*PI/3
+	Escribir "El volumen de la esfera es:"
+	Escribir ra
+FinAlgoritmo
