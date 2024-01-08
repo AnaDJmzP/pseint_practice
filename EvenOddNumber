@@ -1,0 +1,14 @@
+Algoritmo paroimpar
+	Definir n Como Entero
+	Escribir 'Escribe tu número.'
+	Leer n
+	Si n=0 Entonces
+		Escribir 'Número no válido, escribe otro.'
+	SiNo
+		Si n MOD 2=0 Entonces
+			Escribir 'Tu número es par.'
+		SiNo
+			Escribir 'Tu número es impar'
+		FinSi
+	FinSi
+FinAlgoritmo
