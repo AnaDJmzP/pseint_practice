@@ -1,0 +1,9 @@
+Algoritmo TpararecorrerD
+	Definir V, D, T Como Real
+	Escribir 'Ingresa la distancia.'
+	Leer D
+	Escribir 'Ingresa la velocidad.'
+	Leer V
+	T <- D/V
+	Escribir 'El tiempo que le toma a un auto recorrer ', D, 'km a una velocidad de ', V, 'km/h es ', T, 'h.'
+FinAlgoritmo
