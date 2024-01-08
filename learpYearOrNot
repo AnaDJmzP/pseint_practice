@@ -1,0 +1,22 @@
+Algoritmo abisiesto
+	Definir a Como Entero
+	Escribir 'Ingresa el año para saber si es o no bisiesto.'
+	Leer a
+	Si a<1582 Entonces
+		Escribir 'No es año bisiesto. Estos fueron instaurados oficialmente el 4 de octubre 1582.'
+	SiNo
+		Si a MOD 400=0 Entonces
+			Escribir ' Es un año bisiesto.'
+		SiNo
+			Si a MOD 4=0 Y a MOD 100>0 Entonces
+				Escribir ' Es un año bisiesto.'
+			SiNo
+				Si a MOD 4=0 Y a MOD 100=0 Y a MOD 400=0 Entonces
+					Escribir 'Es un año bisiesto.'
+				SiNo
+					Escribir 'No es bisiesto.'
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo
