@@ -1,0 +1,8 @@
+Algoritmo Leerelnombre
+	Definir nombre, ape Como Cadena
+	Escribir 'Escribe tus nombres.'
+	Leer nombre
+	Escribir 'Escribe tus apellidos.'
+	Leer ape
+	Escribir '¡Hola ', nombre, ' ', ape, '! Te damos la bienvenida.'
+FinAlgoritmo
