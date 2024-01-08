@@ -1,0 +1,69 @@
+Funcion bisiesto
+	Definir an, aa como Entero //Aan- año de nacimiento, aa - año actual.
+	Escribir "Para saber cuántos días ha vivido una persona, ingresa el año de nacimiento."
+	Leer an
+	Escribir "Ingreso el año en curso con números."
+	Leer aa
+	
+	Para i<-an hasta aa Con Paso 1 Hacer
+		Si (an <1582 y an%400=0) o (an<1582 y an%4=0 y aa%100>0) o (an<1582 y an%4=0 Y aa%100=0 Y aa%400=0) Entonces
+			i= 1
+		SiNo
+			i=0
+		FinSi
+		Escribir i
+	FinPara
+FinFuncion
+
+Algoritmo diasvividos2
+	
+	
+	Definir a Como Entero
+	Definir dias, AdN como Entero
+	
+		Leer a
+		Si a<1582 y a MOD 400=0 Entonces	
+				Si a MOD 4=0 Y a MOD 100>0 Entonces
+					Si a MOD 4=0 Y a MOD 100=0 Y a MOD 400=0 Entonces
+				FinSi
+			FinSi
+		FinSi
+	
+	
+	
+	
+	ene<-1
+	feb<-2
+	mar<-3
+	abr<-4
+	may<-5
+	ju<-6
+	jul<-7
+	ago<-8
+	sep<-9
+	oct<-10
+	nov<-11
+	dic<-12
+	
+	ener <- 31
+	febr <- 28
+	marz <- 31
+	abri <- 30
+	mayo <- 31
+	juni <- 30
+	juli <- 31
+	agos <- 31
+	sept <- 30
+	octu <- 31
+	novi <- 30
+	dici <- 31
+	
+	Escribir "Para saber cuántos días has vivido "
+	Escribir "Dime en que año nacistes. Ingresalo a cuatro(4) dígitos."
+	Leer AdN
+	
+	dias = 365 * AdN
+	
+	
+	
+FinAlgoritmo
