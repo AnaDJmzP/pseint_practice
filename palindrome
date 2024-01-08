@@ -1,0 +1,41 @@
+Algoritmo palindromo
+	
+	Definir a como Cadena
+	
+	Escribir "Para saber si una palabra o frase es palíndromo o no, "
+	Escribir "Escribela aquí sin signos de puntuación (comas, acentos...)."
+	leer a 
+	cont<-0	
+	
+	a<-Minusculas(a)
+	long= Longitud(a)
+	b="" //texto invertido
+	//c = sin espacios
+	
+	Para i<-0 Hasta long Con Paso -1 Hacer
+		Si 	Subcadena(a,i,i) <>" " Entonces
+			c<-c+Subcadena(a,i,i)
+		FinSi
+		Escribir c
+	FinPara
+	
+	Para i<-0 Hasta Longitud(a) Con Paso 1 Hacer
+		Si 	Subcadena(a,i,i) <>" " Entonces
+			b <-b + Subcadena(c,i,i)
+			cont<-cont+1
+		SiNo
+			b<-b+Subcadena(a,i,i)
+		FinSi
+		Escribir b
+	FinPara
+	
+	
+	Si a=b Entonces
+		Escribir "El texto ingresado es palíndromo."
+	SiNo
+		Escribir "El texto ingresado no es palíndromo"
+	FinSi
+	
+	
+	
+FinAlgoritmo
