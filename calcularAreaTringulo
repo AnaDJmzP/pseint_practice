@@ -1,0 +1,11 @@
+Algoritmo areatriangulo
+	Definir area, b, h Como Real
+	Definir area Como Real
+	Escribir 'Para calular el área de un triángulo'
+	Escribir 'ingresa el valor de la Base (b).'
+	Leer b
+	Escribir 'ingresa el valor de la Altura (h).'
+	Leer h
+	area <- (b*h)/2
+	Escribir 'El área del triángulo es ', area, '.'
+FinAlgoritmo
