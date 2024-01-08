@@ -1,0 +1,21 @@
+Algoritmo incrementosalarial
+	Definir sal, inc20, inc15, Tinc20, Tinc15 Como Real
+	Escribir 'Escribe el salario para calcular el incremento.'
+	Leer sal
+	Si sal<15000.00 Entonces
+		Escribir 'El incremento salarial corresponde al 20%.'
+	SiNo
+		Escribir 'El incremento salarial corresponde al 15%.'
+	FinSi
+	Si sal<15000 Entonces
+		inc20 <- (20*sal)/100
+		Tinc20 <- inc20+sal
+		Escribir 'La cantidad a aumentar al salario es de ', inc20, '.'
+		Escribir 'El total del salario con el incremento es de ', Tinc20, '.'
+	SiNo
+		inc15 <- (15*sal)/100
+		Tinc15 <- inc15+sal
+		Escribir 'La cantidad a aumentar al salario es de ', inc15, '.'
+		Escribir 'El total del salario con el incremento es de ', Tinc15, '.'
+	FinSi
+FinAlgoritmo
